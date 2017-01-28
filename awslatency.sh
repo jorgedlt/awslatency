@@ -10,7 +10,7 @@ data=$( cat $0 | grep '^#\.' | sed -e 's/^#\.//' )
 
 for i in $sites; do
   echo "$data"  | grep $i | cut -d' ' -f3,4
-  pingraw=$(ping -w 5000 -c 3 ${i})
+  pingraw=$(/sbin/ping -W 5000 -c 3 ${i})
   packets=$(echo "${pingraw}" | grep packets | cut -d',' -f1,2,3)
   roundtrip=$(echo "${pingraw}" | grep min.avg.max | cut -d'/' -f5)
   echo "     $packets $roundtrip ms"
