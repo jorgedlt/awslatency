@@ -46,3 +46,6 @@ to run, it requires no parameters
 	     3 packets transmitted, 3 packets received, 0.0% packet loss 199.852 ms
 	(Beijing)
 	     3 packets transmitted, 3 packets received, 0.0% packet loss 364.128 ms
+	     
+If you find this useful, or end up modifing the code, please drop me an email I would love to hear how you used this script.
+/Jorge
